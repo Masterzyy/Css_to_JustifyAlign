@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inline-block元素两端对齐</title>
+    <style>
+     p{
+         text-align: justify;
+         height: 300px;
+     }
+     p:after{
+         content: " ";
+         display: inline-block;
+         overflow: hidden;
+         width: 100%;
+     }
+     span{
+         display: inline-block;
+         width: 80px;
+         height: 80px;
+     }
+    </style>
+</head>
+
+<body>
+    <p>庆祝十九大</p>
+    <p>
+        <span>nihao</span>
+        <span>你好</span>
+        <span>hello</span>
+        <span>嗨</span>
+
+    </p>
+</body>
+
+</html>
